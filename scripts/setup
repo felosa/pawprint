@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+set -eu
+
+create_env_file() {
+  env_file="$(cd "$(dirname "$0")" && pwd)/../.env"
+  if [ ! -e "$env_file" ]; then
+    cp "$env_file.dist" "$env_file"
+    echo "USER_ID=$(id -u)" >>"$env_file"
+    echo "GROUP_ID=$(id -g)" >>"$env_file"
+  fi
+}
+
+create_env_file

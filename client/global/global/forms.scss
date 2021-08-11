@@ -1,0 +1,77 @@
+$fieldWarningColor: $warningred;
+
+:global {
+  input {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 1rem;
+    background-color: $white;
+    border: 1px solid $midgrey;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-weight: 300;
+    font-family: $font-main;
+    color: $black;
+    width: 100%;
+
+    @include md {
+      padding: 0 20px;
+      font-size: 0.875rem;
+    }
+  }
+
+  label,
+  .fieldLabel,
+  .fieldDescription {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+
+    @include lg {
+      font-size: 1.13rem;
+      line-height: 1.33em;
+      margin-bottom: 22px;
+    }
+  }
+
+  .fieldWrap {
+    position: relative;
+
+    &:not(:first-child),
+    &.fieldWrap__FirstName:first-child,
+    &.fieldWrap__PostCode:first-child {
+      margin-top: 30px;
+    }
+  }
+
+  .hideLabel {
+    display: none;
+  }
+
+  //
+  // Errors
+  //
+  .fieldError__Input {
+    border-color: $fieldWarningColor;
+    background-color: rgba($fieldWarningColor, 0.3);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .fieldError__Message {
+    color: $white;
+    background-color: $fieldWarningColor;
+    font-size: 0.833em;
+    font-weight: 600;
+    display: block;
+    padding: 10px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    ul {
+      list-style: none;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="312a5c6f-4d11-43d6-9a5d-baf471e1325e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1q6rgFRuIJgEjsxR7R5zfg50C2Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="312a5c6f-4d11-43d6-9a5d-baf471e1325e" name="Default Changelist" comment="" />
+      <created>1616410989530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616410989530</updated>
+      <workItem from="1616410990748" duration="9520000" />
+      <workItem from="1616425620319" duration="2304000" />
+      <workItem from="1616428154805" duration="495000" />
+      <workItem from="1616780020646" duration="274000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updated test project to run without docker">
+      <created>1616427912269</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616427912269</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated test project to run without docker">
+      <created>1616428193394</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616428193394</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated readme file">
+      <created>1616606069821</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616606069821</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated test project to run without docker" />
+    <MESSAGE value="Updated readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated readme file" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="621" y="263" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616414873794">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="621" y="263" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1707.920/3840.0.1920.999@0.0.1707.920" timestamp="1616414873794" />
+    <state x="71" y="110" key="CommitChangelistDialog2" timestamp="1616606069753">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="71" y="110" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1616606069753" />
+    <state x="94" y="94" width="1519" height="732" key="DiffContextDialog" timestamp="1616428569479">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="94" y="94" width="1519" height="732" key="DiffContextDialog/0.0.1707.920/3840.0.1920.999@0.0.1707.920" timestamp="1616428569479" />
+    <state x="635" y="216" key="FileChooserDialogImpl" timestamp="1616421914585">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="635" y="216" key="FileChooserDialogImpl/0.0.1707.920/3840.0.1920.999@0.0.1707.920" timestamp="1616421914585" />
+    <state x="165" y="75" key="MergeDialog" timestamp="1616428298571">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="165" y="75" key="MergeDialog/0.0.1707.920/3840.0.1920.999@0.0.1707.920" timestamp="1616428298571" />
+    <state x="494" y="222" key="MultipleFileMergeDialog" timestamp="1616428299953">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="494" y="222" key="MultipleFileMergeDialog/0.0.1707.920/3840.0.1920.999@0.0.1707.920" timestamp="1616428299953" />
+    <state x="503" y="249" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1616606071215">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="447" y="194" key="Vcs.Push.Dialog.v2/0.0.1707.920/3840.0.1920.999@0.0.1707.920" timestamp="1616427917065" />
+    <state x="503" y="249" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1616606071215" />
+    <state x="563" y="193" width="581" height="534" key="find.popup" timestamp="1616427086964">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="563" y="193" width="581" height="534" key="find.popup/0.0.1707.920/3840.0.1920.999@0.0.1707.920" timestamp="1616427086964" />
+    <state x="605" y="360" key="git4idea.ui.GitStashDialog" timestamp="1616414486207">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="605" y="360" key="git4idea.ui.GitStashDialog/0.0.1707.920/3840.0.1920.999@0.0.1707.920" timestamp="1616414486207" />
+    <state x="605" y="307" key="git4idea.ui.GitUnstashDialog" timestamp="1616414493283">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="605" y="307" key="git4idea.ui.GitUnstashDialog/0.0.1707.920/3840.0.1920.999@0.0.1707.920" timestamp="1616414493283" />
+    <state x="516" y="196" width="672" height="678" key="search.everywhere.popup" timestamp="1616428419742">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="516" y="196" width="672" height="678" key="search.everywhere.popup/0.0.1707.920/3840.0.1920.999@0.0.1707.920" timestamp="1616428419742" />
+  </component>
+</project>

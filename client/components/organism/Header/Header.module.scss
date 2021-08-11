@@ -1,0 +1,27 @@
+@import '../../../global/base/index.scss';
+
+.Header {
+  width: 100%;
+  text-align: left;
+  background-color: $green;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .LogoWrap {
+    width: 70%;
+    padding: 15px 0;
+
+    @include md {
+      width: 50%;
+      padding: 20px 0;
+    }
+
+    @include lg {
+      width: 30%;
+      padding: 20px 0;
+    }
+  }
+}

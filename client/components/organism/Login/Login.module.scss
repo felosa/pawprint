@@ -1,0 +1,69 @@
+@import '../../../global/base/index.scss';
+
+.Login {
+  text-align: center;
+  color: $white;
+  width: 100%;
+
+  .LoginForm {
+    margin: auto;
+    width: 80%;
+
+    @include md {
+      width: 50%
+    }
+
+    @include lg {
+      width: 30%
+    }
+  }
+
+  [class^='SectionWrap__'] {
+    padding-top: 57px;
+    padding-bottom: 27px;
+
+    @include md {
+      padding-top: 60px;
+      padding-bottom: 165px;
+    }
+
+    @include xl {
+      padding-top: 93px;
+    }
+  }
+
+  [class*='fieldInput'] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .LoginFormFields {
+    padding-top: 23px;
+    padding-bottom: 27px;
+
+    @include md {
+      padding-bottom: 35.5px;
+      padding-top: 34.5px;
+    }
+
+    @include xl {
+      padding-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 30px;
+      padding-bottom: 24px;
+    }
+  }
+
+  .ButtonSubmit {
+    margin-top: 27px;
+
+    @include md {
+      margin-top: 35.5px;
+    }
+
+    @include xl {
+      margin-top: 24px;
+    }
+  }
+}

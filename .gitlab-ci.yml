@@ -1,0 +1,73 @@
+---
+stages:
+  - prepare
+  - lint
+  - test
+
+# IDEs may output lint warnings for the below variable anchors,
+# but they're valid.
+.shared_variables: &shared_variables
+  REGISTRY: registry.gitlab.com/pawprint-eco/fe-test-preparation
+  IMAGE: "$REGISTRY/client"
+
+# Anchor to set up images used in tests.
+.image: &image
+  image:
+    name: "$IMAGE"
+    # GitLab CI pipes in its own argument as specified in the `bashDetectShell`
+    # constant from:
+    # https://gitlab.com/gitlab-org/gitlab-runner/blob/master/shells/bash.go
+    # This is a series of if/else statements to determine the shell used in the
+    # container; as it interferes with the entrypoints for the dev containers it
+    # must be overridden with an empty value here.
+    entrypoint: [""]
+
+.client_template: &client_template
+  <<: *image
+  interruptible: true
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+  before_script:
+    - cd client
+
+.client_cache: &client_cache
+  key: client-${CI_COMMIT_REF_SLUG}
+  paths:
+    - client/node_modules/
+
+# Prepare stage
+prepare_client_cache:
+  <<: *client_template
+  stage: prepare
+  variables:
+    <<: *shared_variables
+  cache:
+    <<: *client_cache
+  script:
+    - yarn install --frozen-lockfile
+
+# Lint stage
+client_lint:
+  <<: *client_template
+  stage: lint
+  variables:
+    <<: *shared_variables
+  cache:
+    <<: *client_cache
+    policy: pull
+  script:
+    - npx eslint .
+
+# Test stage
+client_tests:
+  <<: *client_template
+  stage: test
+  script:
+    - yarn test --coverage
+  variables:
+    <<: *shared_variables
+    NODE_ENV: test
+  cache:
+    <<: *client_cache
+    policy: pull
+  coverage: '/^\s*Lines\s*:\s*(\d+.\d+)\%/'

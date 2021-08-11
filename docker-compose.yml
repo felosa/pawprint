@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  php:
+    image: ${REGISTRY}/api/php
+    environment:
+      - APP_ENV=dev
+      - USER_ID=${USER_ID}
+      - GROUP_ID=${GROUP_ID}
+    volumes:
+      - ./api:/srv/api:rw,cached
+
+  api:
+    image: ${REGISTRY}/api/nginx
+    depends_on:
+      - php
+    volumes:
+      - ./api/public:/srv/api/public:ro
+
+  client:
+    image: ${REGISTRY}/client
+    environment:
+      - EXTERNAL_API_ENTRYPOINT=http://api.paw.test
+      - INTERNAL_API_ENTRYPOINT=http://api
+      - USER_ID=${USER_ID}
+      - GROUP_ID=${GROUP_ID}
+    volumes:
+      - ./client:/usr/src/client:rw,cached
+
+  nginx:
+    image: ${REGISTRY}/nginx
+    depends_on:
+      - client
+      - api
+    ports:
+      - 80:80
+    volumes:
+      - ./api/public:/srv/api/public:ro

@@ -1,0 +1,34 @@
+@import '../../../global/base/index.scss';
+
+.ButtonSubmit {
+  display: block;
+  width: 100%;
+  line-height: 50px;
+  color: $white;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: $black;
+
+  @include md {
+    font-size: 1.125rem;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #000000;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $black;
+    }
+  }
+}

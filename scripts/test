@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+## Run yarn inside the client container.
+
+script_dir="$(cd "$(dirname "$0")" && pwd)"
+app_dir="$(dirname "$script_dir")"
+
+# shellcheck source=.env
+. "$app_dir/.env"
+image_name="$REGISTRY/client"
+client_dir="$app_dir/client"
+
+docker run \
+  --rm \
+  --interactive \
+  --tty \
+  --env USER_ID="$USER_ID" \
+  --env GROUP_ID="$GROUP_ID" \
+  --volume "$client_dir:/usr/src/client:rw,cached" \
+  "$image_name" yarn test

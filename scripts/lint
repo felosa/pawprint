@@ -1,0 +1,37 @@
+#!/usr/bin/env sh
+set -eu
+
+## Run ESLint inside the client container.
+
+# Ideally all of this would be handled by the IDE. While PhpStorm has nominal
+# support for these tools it's not great. There's an open ticket to improve it:
+# https://youtrack.jetbrains.com/issue/WI-33088
+
+script_dir="$(cd "$(dirname "$0")" && pwd)"
+app_dir="$(dirname "$script_dir")"
+
+# shellcheck source=.env
+. "$app_dir/.env"
+image_name="$REGISTRY/client"
+client_dir="$app_dir/client"
+
+run_container() {
+  # Note the quotes in "sh -c '$command'" - the container uses `su -c` (which
+  # only accepts one command) to switch a user from the container's root to a
+  # user with the host's UID. The `sh -c` hack passes on all the commands as a
+  # string, allowing them to all run.
+  docker run \
+    --rm \
+    --interactive \
+    --tty \
+    --env USER_ID="$USER_ID" \
+    --env GROUP_ID="$GROUP_ID" \
+    --volume "$client_dir:/usr/src/client" \
+    "$image_name" npx eslint --ext .js,.jsx "$@" .
+}
+
+main() {
+  run_container "$@"
+}
+
+main "$@"
